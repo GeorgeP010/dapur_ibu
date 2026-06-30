@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afhaal Menu — Dapur Ibu | Indonesisch Restaurant Voorburg</title>
+  <meta name="description" content="Bestel uw favoriete Indonesische gerechten online en haal ze op bij Dapur Ibu in Voorburg. Nasi, saté, broodjes en meer.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container": "#ffe9e7",
+            "primary-container": "#a21e2a",
+            "on-background": "#261818",
+            "on-secondary": "#ffffff",
+            "tertiary": "#00434e",
+            "primary": "#7f0017",
+            "secondary": "#745b0d",
+            "outline-variant": "#e1bfbd",
+            "deep-charcoal": "#1A1A1A",
+            "on-tertiary-fixed": "#001f25",
+            "on-secondary-container": "#775d10",
+            "tertiary-fixed": "#a8edfe",
+            "on-secondary-fixed": "#241a00",
+            "error-container": "#ffdad6",
+            "surface-container-low": "#fff0ef",
+            "outline": "#8d706f",
+            "sunset-orange": "#DF5518",
+            "surface-container-high": "#fce2e1",
+            "background": "#fff8f7",
+            "on-primary": "#ffffff",
+            "surface-variant": "#f6dddb",
+            "inverse-on-surface": "#ffedeb",
+            "on-surface": "#261818",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed-variant": "#004e5a",
+            "secondary-fixed": "#ffdf94",
+            "on-primary-container": "#ffb5b3",
+            "inverse-primary": "#ffb3b1",
+            "tertiary-fixed-dim": "#8dd1e1",
+            "on-surface-variant": "#594140",
+            "on-primary-fixed-variant": "#8f0d1f",
+            "surface-dim": "#edd4d3",
+            "surface-container-highest": "#f6dddb",
+            "on-tertiary-container": "#8ed2e2",
+            "secondary-fixed-dim": "#e5c36d",
+            "tertiary-container": "#005c6a",
+            "error": "#ba1a1a",
+            "on-secondary-fixed-variant": "#594400",
+            "on-error-container": "#93000a",
+            "surface-tint": "#b12a33",
+            "secondary-container": "#fdd981",
+            "on-error": "#ffffff",
+            "on-primary-fixed": "#410007",
+            "primary-fixed": "#ffdad8",
+            "paddy-green": "#2D4C28",
+            "inverse-surface": "#3c2d2c",
+            "surface-bright": "#fff8f7",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed-dim": "#ffb3b1",
+            "surface": "#fff8f7",
+            "rice-paper": "#F9F7F2"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            "container-max": "1280px",
+            "stack-md": "16px",
+            "stack-sm": "8px",
+            "margin-desktop": "64px",
+            gutter: "24px",
+            "stack-lg": "32px",
+            "margin-mobile": "20px",
+            "section-gap": "120px"
+          },
+          fontFamily: {
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"]
+          },
+          fontSize: {
+            "headline-lg-mobile": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "500" }],
+            "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+            "headline-lg": ["48px", { lineHeight: "56px", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "display-lg": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "700" }]
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+
+  <!-- Info Bar -->
+  <div class="info-bar text-white py-2 px-5 md:px-16 text-center">
+    <p class="font-label-md text-label-md flex items-center justify-center gap-2 flex-wrap">
+      <span class="material-symbols-outlined text-[16px]">info</span>
+      Vragen? Bel of mail ons direct: <a class="underline hover:text-secondary-fixed transition-colors" href="tel:0703263254">070 326 32 54</a> | <a class="underline hover:text-secondary-fixed transition-colors" href="mailto:dapuribu@yahoo.com">dapuribu@yahoo.com</a>
+    </p>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 backdrop-blur-md bg-rice-paper/90 border-b border-secondary/20 shadow-sm z-50">
+    <div class="flex justify-between items-center w-full px-5 md:px-16 py-4 max-w-[1280px] mx-auto">
+      <a href="home.html" class="font-headline-md text-headline-md text-primary italic flex items-center gap-2">
+        <img src="img/dapur-ibu-logo.png" alt="Dapur Ibu Logo" class="h-10 md:h-12 object-contain">
+      </a>
+      <nav class="hidden md:flex items-center gap-3 lg:gap-6 whitespace-nowrap">
+        <a href="home.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Home</a>
+        <a href="menu.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Gerechten</a>
+        <a href="afhaal.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Afhaal Menu</a>
+        <a href="catering.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Catering</a>
+        <a href="over-ons.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Over Ons</a>
+        <a href="contact.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        
+        <div class="hidden md:flex items-center gap-2">
+          <a href="tel:0703263254" class="p-2 text-primary hover:bg-surface-variant/50 rounded-full transition-all duration-300">
+            <span class="material-symbols-outlined">call</span>
+          </a>
+          <button onclick="document.body.style.overflow='hidden'; document.getElementById('checkout-modal').classList.add('active')" class="p-2 text-primary hover:bg-surface-variant/50 rounded-full transition-all duration-300 relative">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            <span data-cart-count class="absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold cart-badge" style="display:none">0</span>
+          </button>
+        </div>
+        <a href="afhaal.html" class="hidden lg:flex items-center justify-center bg-primary text-white font-label-lg text-label-lg px-6 py-3 rounded hover:bg-primary/90 hover:scale-[0.97] transition-all duration-150">Afhaal Bestellen</a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-primary">
+          <span class="material-symbols-outlined text-[32px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+  <div id="mobile-menu-panel" class="mobile-menu-panel">
+    <div class="flex justify-between items-center p-6 border-b border-secondary/20">
+      <img src="img/dapur-ibu-logo.png" alt="Dapur Ibu Logo" class="h-8 md:h-10 object-contain">
+      <button id="mobile-menu-close" class="p-2 text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col p-6 gap-2">
+      <a href="home.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Home</a>
+      <a href="menu.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Gerechten</a>
+      <a href="afhaal.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Afhaal Menu</a>
+      <a href="catering.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Catering</a>
+      <a href="over-ons.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Over Ons</a>
+      <a href="contact.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Contact</a>
+      <hr class="border-secondary/20 my-2">
+      <a href="afhaal.html" class="bg-primary text-white font-label-lg text-label-lg px-6 py-3 rounded text-center hover:bg-primary/90 transition-colors">Afhaal Bestellen</a>
+      <a href="catering.html" class="border border-secondary text-secondary font-label-lg text-label-lg px-6 py-3 rounded text-center hover:bg-secondary/5 transition-colors">Catering</a>
+    </nav>
+    <div class="p-6 border-t border-secondary/20 mt-auto">
+      <p class="font-label-md text-label-md text-on-surface-variant">📞 070 326 32 54</p>
+      <p class="font-label-md text-label-md text-on-surface-variant">📧 dapuribu@yahoo.com</p>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="bg-rice-paper border-b border-secondary/10 pattern-bg">
+    <div class="max-w-[1280px] mx-auto px-5 md:px-16 py-8 md:py-12">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+        <div class="text-center md:text-center flex-grow">
+          <p class="font-label-lg text-label-lg text-secondary uppercase tracking-wider mb-2 flex items-center gap-2 justify-center">
+            <span class="material-symbols-outlined text-[18px]">takeout_dining</span>
+            Afhaal Bestellen
+          </p>
+          <h1 class="font-headline-lg text-headline-lg text-on-surface md:text-display-lg md:font-display-lg">Afhaal Menu</h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-xl mx-auto">Kies uw favoriete samengestelde gerechten en pakketten, plaats uw bestelling en haal deze op bij ons in Voorburg.</p>
+        </div>
+        <div class="flex items-center gap-3 bg-surface-container-lowest/80 border border-secondary/10 rounded-xl px-4 py-3">
+          <span class="material-symbols-outlined text-paddy-green icon-filled">schedule</span>
+          <div>
+            <p class="font-label-lg text-label-lg text-on-surface mb-1">Ophaaltijden</p>
+            <div class="font-label-md text-label-md text-on-surface-variant flex flex-col gap-0.5">
+              <span>Maandag: 15:00–19:30</span>
+              <span>Dinsdag: 12:00–19:30</span>
+              <span>Woensdag: 12:00–19:30</span>
+              <span>Donderdag: 12:00–19:30</span>
+              <span>Vrijdag: 12:00–19:30</span>
+              <span>Zaterdag: 12:00–19:30</span>
+              <span>Zondag: 15:00–19:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content: 3-Column Layout -->
+  <main class="max-w-[1280px] mx-auto px-5 md:px-16 py-8 md:py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 relative">
+
+      <!-- LEFT SIDEBAR: Category Navigation -->
+      <aside class="hidden lg:block lg:col-span-3">
+        <div class="sticky top-[100px] bg-rice-paper rounded-xl border border-secondary/15 shadow-sm" style="max-height: calc(100vh - 120px); display: flex; flex-direction: column;">
+          <div class="px-4 pt-4 pb-2 border-b border-secondary/10 shrink-0">
+            <h2 class="font-label-lg text-label-lg text-on-surface flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[18px]">restaurant_menu</span>
+              Menu
+            </h2>
+          </div>
+          <nav class="flex flex-col gap-0 overflow-y-auto flex-grow px-2 py-2" id="category-nav" style="scrollbar-width: thin;">
+            <!-- JS will populate from MENU_DATA -->
+          </nav>
+
+          <!-- Info box -->
+          <div class="px-3 py-3 border-t border-secondary/10 shrink-0">
+            <div class="flex items-start gap-2 bg-surface-container/50 rounded-lg p-2">
+              <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">info</span>
+              <div>
+                <p class="font-label-md text-label-md text-on-surface-variant text-[11px]">Ophalen ca. 20 min na bestelling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Mobile Category Navigation (horizontal scroll) -->
+      <div class="lg:hidden col-span-1 sticky top-[72px] z-30 bg-surface/95 backdrop-blur-sm border-b border-secondary/10 relative">
+        <!-- Right side fade to indicate scrolling -->
+        <div class="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-surface to-transparent pointer-events-none z-10"></div>
+        <nav class="flex gap-2 overflow-x-auto no-scrollbar pb-3 pt-2 px-5" id="mobile-category-nav">
+          <!-- JS will populate from MENU_DATA -->
+        </nav>
+      </div>
+
+      <!-- MIDDLE: Menu Items (rendered by JS) -->
+      <section class="col-span-1 lg:col-span-9 pb-24">
+        
+        <!-- Search & Legenda Header -->
+        <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4 mb-6">
+          <!-- Search Bar -->
+          <div class="relative w-full xl:max-w-md shrink-0">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+            <input type="text" id="menu-search" placeholder="Zoek een gerecht of categorie..." class="w-full bg-surface-container/30 border border-secondary/10 rounded-lg pl-10 pr-4 py-2.5 font-body-md text-on-surface focus:outline-none focus:border-primary/50 focus:bg-white transition-colors">
+          </div>
+          
+          <!-- Legenda -->
+          <details class="group bg-surface-container/30 rounded-lg border border-secondary/10 w-full xl:w-fit cursor-pointer">
+            <summary class="flex items-center gap-2 px-4 py-2.5 font-label-md text-[13px] text-on-surface select-none marker:content-none list-none" style="list-style: none;">
+              <span class="material-symbols-outlined text-[18px] text-primary transition-transform group-open:rotate-180">expand_more</span>
+              <span class="font-bold">Legenda & Allergenen</span>
+            </summary>
+            <div class="px-4 pb-4 pt-2 flex flex-wrap gap-4 font-label-md text-[11px] text-on-surface-variant border-t border-secondary/10 mt-1">
+              <div class="flex items-center gap-1.5"><i class="fa-solid fa-pepper-hot text-sunset-orange text-[12px]"></i> Pittig</div>
+              <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-paddy-green text-[14px] mt-0.5">eco</span> Vegetarisch</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_kip_1782777899911.png" class="w-4 h-4 object-contain mix-blend-multiply"> Kip</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_rund_1782777908434.png" class="w-4 h-4 object-contain mix-blend-multiply"> Rund</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_varken_1782777915289.png" class="w-4 h-4 object-contain mix-blend-multiply"> Varken</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_schaaldieren_1782777922566.png" class="w-4 h-4 object-contain mix-blend-multiply"> Schaaldieren</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_tofu_1782777929361.png" class="w-4 h-4 object-contain mix-blend-multiply"> Tofu/Soja</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_gluten_1782777937187.png" class="w-4 h-4 object-contain mix-blend-multiply"> Gluten</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_noten_1782777946159.png" class="w-4 h-4 object-contain mix-blend-multiply"> Noten / Pinda's</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_eieren.png" class="w-4 h-4 object-contain mix-blend-multiply"> Eieren</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_melk.png" class="w-4 h-4 object-contain mix-blend-multiply"> Melk</div>
+              <div class="flex items-center gap-1.5"><img src="img/icons/icon_selderij.png" class="w-4 h-4 object-contain mix-blend-multiply"> Selderij</div>
+            </div>
+          </details>
+        </div>
+
+        <div id="afhaal-menu">
+          <!-- JS will populate menu sections here via renderAfhaalMenu() -->
+          <div class="flex flex-col items-center justify-center py-16 text-on-surface-variant">
+            <span class="material-symbols-outlined text-5xl mb-4 opacity-30 animate-pulse">restaurant</span>
+            <p class="font-body-md text-body-md">Menu wordt geladen...</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Universal Floating Cart Button -->
+  <div class="fixed bottom-6 left-5 right-5 lg:left-auto lg:right-10 lg:w-[400px] z-40" id="cart-bar" style="display:none">
+    <button onclick="document.body.style.overflow='hidden'; document.getElementById('checkout-modal').classList.add('active')"
+      class="w-full bg-primary text-on-primary font-label-lg text-label-lg px-6 py-4 rounded-xl flex items-center justify-between shadow-lg shadow-primary/30 hover:bg-primary/90 transition-colors">
+      <span class="flex items-center gap-2">
+        <span class="material-symbols-outlined icon-filled">shopping_bag</span>
+        <span data-cart-count>0</span> item(s)
+      </span>
+      <span class="flex items-center gap-1">
+        Afrekenen
+        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+      </span>
+    </button>
+  </div>
+
+  <!-- Universal Checkout Modal -->
+  <div id="checkout-modal" class="modal-overlay" onclick="if(event.target === this) { document.body.style.overflow=''; this.classList.remove('active'); }">
+    <div class="modal-content max-h-[90vh] flex flex-col !max-w-2xl !p-0">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-secondary/10 bg-primary/5 shrink-0">
+        <h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary icon-filled">shopping_bag</span>
+          Mijn Bestelling
+          <span class="ml-2 bg-primary text-on-primary font-label-md px-2 py-0.5 rounded-full text-[12px]"><span data-cart-count>0</span> items</span>
+        </h3>
+        <button onclick="document.body.style.overflow=''; this.closest('.modal-overlay').classList.remove('active')" class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <div class="overflow-y-auto flex-grow">
+        <!-- Cart items -->
+        <div class="px-5 py-4 bg-white" id="afhaal-cart">
+          <div class="text-center py-8 text-on-surface-variant">
+            <span class="material-symbols-outlined text-4xl mb-2 block opacity-40">shopping_cart</span>
+            <p class="font-body-md text-body-md">Uw winkelwagen is leeg</p>
+          </div>
+        </div>
+
+        <!-- Order Form -->
+        <form id="afhaal-form" class="px-5 pb-6 border-t border-secondary/10 pt-5 bg-surface" novalidate>
+
+          <!-- Warm/Koud Toggle -->
+          <div class="mb-5">
+            <label class="font-label-lg text-label-lg text-on-surface block mb-2">Temperatuur</label>
+            <div class="toggle-group">
+              <label>
+                <input type="radio" name="temp" value="warm" checked>
+                <span class="toggle-option flex items-center justify-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+                  Warm
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="temp" value="koud">
+                <span class="toggle-option flex items-center justify-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px]">ac_unit</span>
+                  Koud
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Ophaaltijdstip -->
+          <div class="mb-4">
+            <label for="pickup-time" class="font-label-lg text-label-lg text-on-surface block mb-1.5">Ophaaltijdstip</label>
+            <div class="relative">
+              <select id="pickup-time" name="pickup-time" required
+                class="w-full border border-secondary/20 bg-surface-container-lowest rounded-lg pl-4 pr-10 py-2.5 font-body-md text-body-md text-on-surface appearance-none cursor-pointer transition-colors hover:border-secondary/40">
+                <option value="">Laden...</option>
+              </select>
+              <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none flex items-center gap-0.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[18px]">schedule</span>
+                <span class="material-symbols-outlined text-[18px]">expand_more</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Datum -->
+          <div class="mb-4">
+            <label for="pickup-date" class="font-label-lg text-label-lg text-on-surface block mb-1.5">Datum</label>
+            <div class="relative">
+              <input type="date" id="pickup-date" name="pickup-date" required
+                class="w-full border border-secondary/20 bg-surface-container-lowest rounded-lg px-4 py-2.5 font-body-md text-body-md text-on-surface transition-colors hover:border-secondary/40">
+            </div>
+          </div>
+
+          <hr class="border-secondary/10 my-5">
+
+          <!-- Naam -->
+          <div class="mb-4">
+            <label for="naam" class="font-label-lg text-label-lg text-on-surface block mb-1.5">Naam</label>
+            <input type="text" id="naam" name="naam" required placeholder="Uw volledige naam"
+              class="w-full border border-secondary/20 bg-surface-container-lowest rounded-lg px-4 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 transition-colors hover:border-secondary/40">
+          </div>
+
+          <!-- E-mailadres -->
+          <div class="mb-4">
+            <label for="email" class="font-label-lg text-label-lg text-on-surface block mb-1.5">E-mailadres</label>
+            <input type="email" pattern="[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}" title="Vul een geldig e-mailadres in" id="email" name="email" required placeholder="naam@voorbeeld.nl"
+              class="w-full border border-secondary/20 bg-surface-container-lowest rounded-lg px-4 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 transition-colors hover:border-secondary/40">
+          </div>
+
+          <!-- Telefoonnummer -->
+          <div class="mb-4">
+            <label for="telefoon" class="font-label-lg text-label-lg text-on-surface block mb-1.5">Telefoonnummer</label>
+            <input type="tel" pattern="^[\\+]?[0-9\\s\\-]{10,15}$" title="Vul een geldig telefoonnummer in" id="telefoon" name="telefoon" required placeholder="06 1234 5678"
+              class="w-full border border-secondary/20 bg-surface-container-lowest rounded-lg px-4 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 transition-colors hover:border-secondary/40">
+          </div>
+
+          <!-- Betaalmethode -->
+          <div class="mb-6">
+            <label for="betaalmethode" class="font-label-lg text-label-lg text-on-surface block mb-1.5">Betaalmethode</label>
+            <div class="relative">
+              <select id="betaalmethode" name="betaalmethode" required
+                class="w-full border border-secondary/20 bg-surface-container-lowest rounded-lg px-4 py-2.5 font-body-md text-body-md text-on-surface appearance-none cursor-pointer transition-colors hover:border-secondary/40">
+                <option value="ideal">Direct betalen (iDEAL)</option>
+                <option value="winkel">Afrekenen in winkel</option>
+              </select>
+              <span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">payments</span>
+            </div>
+          </div>
+
+          <!-- Form Error Message -->
+          <div id="afhaal-form-error" class="hidden bg-error-container text-on-error-container p-3 rounded-lg mb-4 font-label-md flex items-center gap-2 transition-all">
+            <span class="material-symbols-outlined">error</span>
+            <span id="afhaal-form-error-text"></span>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit"
+            class="w-full bg-primary text-on-primary font-label-lg text-label-lg px-6 py-3.5 rounded-lg hover:bg-primary/90 hover:scale-[0.98] active:scale-[0.96] transition-all duration-150 flex items-center justify-center gap-2 shadow-md shadow-primary/20">
+            <span class="material-symbols-outlined text-[20px]">shopping_cart_checkout</span>
+            Bestelling Bevestigen
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-deep-charcoal text-secondary-fixed">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-5 md:px-16 py-10 max-w-[1280px] mx-auto">
+      <div class="flex flex-col gap-2 text-center md:text-left">
+        <span class="font-headline-sm text-headline-sm text-rice-paper">Dapur Ibu</span>
+        <span class="font-body-md text-body-md text-surface-variant/80">Authentieke Indonesische Keuken in Voorburg</span>
+        <span class="font-label-md text-label-md text-surface-variant/60 mt-1">© 2026 Dapur Ibu</span>
+      </div>
+      <nav class="flex flex-col gap-2 text-center md:text-left">
+        <span class="font-label-lg text-label-lg text-rice-paper mb-1">Navigatie</span>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="home.html">Home</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="menu.html">Gerechten</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="afhaal.html">Afhaal Menu</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="catering.html">Catering</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="over-ons.html">Over Ons</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="contact.html">Contact</a>
+      </nav>
+      <div class="text-center md:text-left">
+        <span class="font-label-lg text-label-lg text-rice-paper mb-2 block">Openingstijden</span>
+        <div class="space-y-1 font-label-md text-label-md text-surface-variant/80">
+          <div class="flex justify-between gap-4"><span>Maandag</span><span>15:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Dinsdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Woensdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Donderdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Vrijdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Zaterdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Zondag</span><span>15:00 – 19:30</span></div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center md:items-end justify-between gap-4">
+        <div class="text-center md:text-right">
+          <span class="font-label-lg text-label-lg text-rice-paper mb-2 block">Contact</span>
+          <p class="font-label-md text-label-md text-surface-variant/80">📞 070 326 32 54</p>
+          <p class="font-label-md text-label-md text-surface-variant/80">📧 dapuribu@yahoo.com</p>
+          <p class="font-label-md text-label-md text-surface-variant/80 mt-1">Koningin Julianaplein 1<br>2274 JD Voorburg</p>
+          <div class="mt-4">
+            <a href="https://www.instagram.com/toko.dapuribu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors inline-flex items-center gap-2">
+              <i class="fa-brands fa-instagram text-[18px] text-transparent bg-clip-text bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]"></i> Volg ons op Instagram
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Inline: set today's date as default, mobile cart sync, hide scrollbar -->
+  <script>
+    // Set default date to today
+    document.addEventListener('DOMContentLoaded', function() {
+      const dateInput = document.getElementById('pickup-date');
+      if (dateInput) {
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const dd = String(today.getDate()).padStart(2, '0');
+        dateInput.value = `${yyyy}-${mm}-${dd}`;
+        dateInput.min = `${yyyy}-${mm}-${dd}`;
+      }
+
+      // Sync mobile cart bar visibility
+      if (typeof cart !== 'undefined') {
+        cart.onChange(function(items) {
+          const mobileBar = document.getElementById('mobile-cart-bar');
+          const mobileCount = document.querySelector('[data-mobile-cart-count]');
+          const mobileCart = document.getElementById('mobile-afhaal-cart');
+          const checkoutBtn = document.getElementById('mobile-checkout-btn-wrap');
+          const count = cart.getCount();
+          if (mobileBar) mobileBar.style.display = count > 0 ? 'block' : 'none';
+          if (checkoutBtn) checkoutBtn.style.display = count > 0 ? 'block' : 'none';
+          if (mobileCount) mobileCount.textContent = count;
+          // Copy main cart HTML to mobile modal
+          const mainCart = document.getElementById('afhaal-cart');
+          if (mobileCart && mainCart) mobileCart.innerHTML = mainCart.innerHTML;
+        });
+      }
+    });
+  </script>
+
+  <!-- Hide scrollbar for mobile category nav -->
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    /* Collapsible menu sections */
+    .collapsed .cat-items {
+      display: none;
+    }
+    .collapsed .cat-chevron {
+      transform: rotate(-90deg);
+    }
+  </style>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

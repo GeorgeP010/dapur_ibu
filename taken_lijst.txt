@@ -1,0 +1,182 @@
+============================================================
+  DAPUR IBU - VOLLEDIGE TAKEN CHECKLIST (Ronde 2)
+  Bijgewerkt: 11 juni 2026
+============================================================
+
+
+=== HOME ===
+[x] Catering knop andere duidelijke kleur
+    → Kleur veranderd naar amber/goud (bg-amber-500), valt nu duidelijk op.
+
+[x] Openingstijden links onderin uitschrijven (ma t/m zo met tijden)
+    → Op alle pagina's staan de volledige dagen uitgeschreven:
+      Maandag    15:00 – 19:30
+      Dinsdag    12:00 – 19:30
+      Woensdag   12:00 – 19:30
+      Donderdag  12:00 – 19:30
+      Vrijdag    12:00 – 19:30
+      Zaterdag   12:00 – 19:30
+      Zondag     15:00 – 19:30
+
+[ ] Vertaling knop Engels/Indo/Nederlands switchen rechts boven
+    → NIET GEÏMPLEMENTEERD. Dit is te complex voor een statische website
+      zonder backend. Een alternatief zou Google Translate widget zijn,
+      maar dat werkt niet goed voor Indonesisch. 
+      STATUS: VERWIJDERD / NIET HAALBAAR.
+
+
+=== MENU (Gerechten pagina) - ALLERGIEËN & WIJZIGINGEN ===
+[x] Frikadel Lombok - Soja WEG uit tags
+[x] Lemper - Noten WEG uit tags
+[x] Bapao - Zonder Soja (tags aangepast)
+[x] Bapao Kip Pedis - TOEGEVOEGD
+[x] Bapao Rund Pedis - TOEGEVOEGD
+
+[x] Soto Ayam - Geen schaaldieren (alleen tag 'Eieren')
+[x] Rawon - NIET pittig (spicy: 0)
+[x] Gule Kambing - MET Soja tag
+
+[x] Witte rijst - Geen allergie-tags (behalve 'Vegetarisch')
+[x] Nasi - MET Gluten tag
+[x] Nasi - MET Schaaldieren tag
+[x] Bami - GEEN Selderij (alleen 'Gluten')
+[x] Mihoen - NIET pittig (spicy: 0), WEL Eieren tag
+[x] Bami Jawa - MET Schaaldieren tag
+[x] Nasi Kuning - GEEN Schaaldieren (alleen 'Vegetarisch')
+
+[x] Sajoer Lodeh - GEEN Schaaldieren (tags: Vegetarisch, Soja)
+[x] Tahoe Bali - Tags correct (Vegetarisch, Soja)
+[x] Tempeh Kering - GEEN Schaaldieren (tags: Vegetarisch, Soja)
+[x] Tumis Kacang Panjang - MET Soja tag
+[x] Atjar - GEEN Sulfiet (tags: alleen Vegetarisch)
+
+[x] Ayam Cashew - NIET pittig (spicy: 0), MET Schaaldieren
+[x] Ayam Cashew Ketjap - GEEN Schaaldieren (tags: Noten, Gluten)
+[x] Opor Kemiri - MET Noten tag (kemiri = andere soort noten)
+[x] Kipfile Blado - VERWIJDERD uit het menu
+[x] Kipfile Ketjap veranderd in Ayam Smoor - GEDAAN
+[x] Saté Ayam - VERWIJDERD uit vlees (staat alleen nog als favoriet/los)
+
+[x] Saté Kambing - VERWIJDERD
+[x] Daging Bali - GEEN Sulfiet
+[x] Daging Smoor - GEEN Schaaldieren (tags: Gluten)
+[x] Daging Rendang - MET Schaaldieren tag
+[x] Daging Blado - MET Schaaldieren tag
+[x] Saté Ayam (favorieten) - ZONDER Schaaldieren (tags: Noten, Gluten, Pinda's)
+
+
+=== KROEPOEK ===
+[x] Kerupuk Oedang - VERWIJDERD
+[x] Kroepoek Siok - TOEGEVOEGD (€3,00)
+[x] Emping Blado - TOEGEVOEGD (€4,00)
+[x] Rempeyek - TOEGEVOEGD (€4,00)
+[x] Udang Mas Pedis - TOEGEVOEGD (€2,25)
+
+
+=== SAMBAL ===
+[x] Sambal Bajak - Beschrijving: "Huisgemaakte zoet pittige sambal"
+[x] Sambal Bajak - MET Schaaldieren tag
+
+
+=== FRISDRANKEN ===
+[x] Coca Cola - TOEGEVOEGD
+[x] Coca Cola Zero - TOEGEVOEGD
+[x] Fanta - TOEGEVOEGD
+[x] Sprite - TOEGEVOEGD
+[x] Ice Tea Green - TOEGEVOEGD
+[x] Spa Blauw - TOEGEVOEGD
+[x] Spa Rood - TOEGEVOEGD
+[x] Teh Botol - TOEGEVOEGD
+[x] Soda Gembira - TOEGEVOEGD
+
+
+=== TOETJES ===
+[x] Kue Lapis - TOEGEVOEGD
+[x] Spekkoek - TOEGEVOEGD
+[x] IJs Tjendol - TOEGEVOEGD
+[x] IJs Kelapa Muda - TOEGEVOEGD
+[x] IJs Tjampur - TOEGEVOEGD
+
+
+=== CATERING ===
+[x] Indonesische Borrelhapjes: keuze uit 3 snacks, meer dan 3 = extra kosten
+    → Geïmplementeerd. Min 3 snacks, extra soorten +€2,00 p.p.
+
+[x] Borden & Bestek optie bij A, B, C + Tumpeng (+€2,00 p.p.)
+    → Geïmplementeerd met live prijsberekening.
+
+[x] Atjar, Saté Ayam, Saté Kambing, Telor Goreng niet kiesbaar bij A/B/C
+    → Deze zijn uitgesloten uit de keuze (is al inbegrepen).
+
+[x] Rekenvoorbeeld / automatische prijscalculator
+    → Geïmplementeerd. Prijs wordt live uitgerekend op basis van
+      aantal personen × prijs per persoon + eventueel bestek.
+
+[x] Optie aantal vegetariërs aangeven
+    → Veld "Aantal vegetariërs" toegevoegd aan het cateringformulier.
+
+[x] Zelf Samenstellen (Custom Made) catering
+    → Volledig geïmplementeerd. Klant kan zelf basis, vlees, groenten
+      en snacks selecteren. Prijs is "Op Aanvraag".
+
+[x] WhatsApp koppeling bij bestellen/offerte
+    → Bij het verzenden van bestelling of offerte wordt automatisch een
+      WhatsApp bericht opgebouwd en geopend met alle details.
+
+[x] Catering validatie: minimaal 1 gerecht kiezen
+    → Klant krijgt foutmelding als er geen gerechten zijn geselecteerd.
+
+[x] Catering: Informatie popup (i) op gerechten
+    → Info knopje toegevoegd op elk gerecht met beschrijving + allergieën.
+
+[x] Catering: Overzicht Bestelling boven formulier op mobiel
+    → Met CSS Grid order classes (order-1/order-2) opgelost.
+
+[x] Catering: Max 250 karakters opmerkingen
+    → maxlength="250" toegevoegd aan textarea.
+
+
+=== NAVIGATIE / STRUCTUUR ===
+[x] "Menu" hernoemd naar "Gerechten"
+[x] "Afhalen" hernoemd naar "Afhaal Menu"
+    → Op alle pagina's in de navigatie doorgevoerd.
+
+
+=== AFHAAL MENU ===
+[x] Gado Gado keuze: Witte Rijst of Lontong
+    → Modal met verplichte keuze toegevoegd.
+
+[x] Popup gerechtinfo met "Toevoegen" knop
+    → Direct vanuit de popup kun je het gerecht toevoegen.
+
+[x] Achtergrond niet meer scrollen bij open popup
+    → body overflow: hidden bij open modal.
+
+[x] Broodje: Zure komkommer als extra topping
+    → Optionele checkbox toegevoegd in broodjes modal.
+
+[x] Winkelmand popup mobiel volledig zichtbaar
+    → Scrollbaar gemaakt, bestellen knop altijd zichtbaar.
+
+[x] Horizontale categorie navigatie sticky
+    → Opgelost door CSS overflow-x: clip fix.
+
+[x] Bestelling overzicht niet als tekst maar als UI elementen
+    → Mooie cards/badges in plaats van platte tekst.
+
+
+=== NOG OPEN / TE BESPREKEN ===
+[ ] Broodjes catering - Klant gaat hier nog over sparren/nadenken.
+[ ] Rijsttafel opties voor 3-10 personen (>10 doorsturen naar catering)
+    → Nog niet geïmplementeerd.
+[ ] Bezorgkosten per provincie
+    → Nog niet geïmplementeerd (complex, vereist data).
+[ ] Instagram koppelen
+    → Nog niet geïmplementeerd.
+[ ] Vertaling knop (Engels/Indo/Nederlands)
+    → NIET HAALBAAR met huidige opzet. Verwijderd als taak.
+
+
+============================================================
+  EINDE CHECKLIST
+============================================================

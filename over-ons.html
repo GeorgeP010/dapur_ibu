@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over Ons — Dapur Ibu | Authentieke Indonesische Keuken</title>
+  <meta name="description" content="Ontdek het verhaal achter Toko Dapur Ibu. Heerlijk Indonesisch eten zoals mama het ooit bedoeld heeft. Al jaren een begrip in Voorburg.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container": "#ffe9e7",
+            "primary-container": "#a21e2a",
+            "on-background": "#261818",
+            "on-secondary": "#ffffff",
+            "tertiary": "#00434e",
+            "primary": "#7f0017",
+            "secondary": "#745b0d",
+            "outline-variant": "#e1bfbd",
+            "deep-charcoal": "#1A1A1A",
+            "on-tertiary-fixed": "#001f25",
+            "on-secondary-container": "#775d10",
+            "tertiary-fixed": "#a8edfe",
+            "on-secondary-fixed": "#241a00",
+            "error-container": "#ffdad6",
+            "surface-container-low": "#fff0ef",
+            "outline": "#8d706f",
+            "sunset-orange": "#DF5518",
+            "surface-container-high": "#fce2e1",
+            "background": "#fff8f7",
+            "on-primary": "#ffffff",
+            "surface-variant": "#f6dddb",
+            "inverse-on-surface": "#ffedeb",
+            "on-surface": "#261818",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed-variant": "#004e5a",
+            "secondary-fixed": "#ffdf94",
+            "on-primary-container": "#ffb5b3",
+            "inverse-primary": "#ffb3b1",
+            "tertiary-fixed-dim": "#8dd1e1",
+            "on-surface-variant": "#594140",
+            "on-primary-fixed-variant": "#8f0d1f",
+            "surface-dim": "#edd4d3",
+            "surface-container-highest": "#f6dddb",
+            "on-tertiary-container": "#8ed2e2",
+            "secondary-fixed-dim": "#e5c36d",
+            "tertiary-container": "#005c6a",
+            "error": "#ba1a1a",
+            "on-secondary-fixed-variant": "#594400",
+            "on-error-container": "#93000a",
+            "surface-tint": "#b12a33",
+            "secondary-container": "#fdd981",
+            "on-error": "#ffffff",
+            "on-primary-fixed": "#410007",
+            "primary-fixed": "#ffdad8",
+            "paddy-green": "#2D4C28",
+            "inverse-surface": "#3c2d2c",
+            "surface-bright": "#fff8f7",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed-dim": "#ffb3b1",
+            "surface": "#fff8f7",
+            "rice-paper": "#F9F7F2"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            "container-max": "1280px",
+            "stack-md": "16px",
+            "stack-sm": "8px",
+            "margin-desktop": "64px",
+            gutter: "24px",
+            "stack-lg": "32px",
+            "margin-mobile": "20px",
+            "section-gap": "120px"
+          },
+          fontFamily: {
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"]
+          },
+          fontSize: {
+            "headline-lg-mobile": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "500" }],
+            "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+            "headline-lg": ["48px", { lineHeight: "56px", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "display-lg": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "700" }]
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased">
+
+  <!-- ============================================
+       INFO BAR
+       ============================================ -->
+  <div class="info-bar text-white py-2 px-5 md:px-16 text-center">
+    <p class="font-label-md text-label-md flex items-center justify-center gap-2 flex-wrap">
+      <span class="material-symbols-outlined text-[16px]">info</span>
+      Vragen? Bel of mail ons direct: <a class="underline hover:text-secondary-fixed transition-colors" href="tel:0703263254">070 326 32 54</a> | <a class="underline hover:text-secondary-fixed transition-colors" href="mailto:dapuribu@yahoo.com">dapuribu@yahoo.com</a>
+    </p>
+  </div>
+
+  <!-- ============================================
+       STICKY HEADER
+       ============================================ -->
+  <header class="sticky top-0 backdrop-blur-md bg-rice-paper/90 border-b border-secondary/20 shadow-sm z-50">
+    <div class="flex justify-between items-center w-full px-5 md:px-16 py-4 max-w-[1280px] mx-auto">
+      <a href="home.html" class="font-headline-md text-headline-md text-primary italic flex items-center gap-2">
+        <img src="img/dapur-ibu-logo.png" alt="Dapur Ibu Logo" class="h-10 md:h-12 object-contain">
+      </a>
+      <nav class="hidden md:flex items-center gap-3 lg:gap-6 whitespace-nowrap">
+        <a href="home.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Home</a>
+        <a href="menu.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Gerechten</a>
+        <a href="afhaal.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Afhaal Menu</a>
+        <a href="catering.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Catering</a>
+        <a href="over-ons.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Over Ons</a>
+        <a href="contact.html" data-nav-link class="whitespace-nowrap font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 px-3 py-2 rounded-lg">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        
+        <div class="hidden md:flex items-center gap-2">
+          <a href="tel:0703263254" class="p-2 text-primary hover:bg-surface-variant/50 rounded-full transition-all duration-300">
+            <span class="material-symbols-outlined">call</span>
+          </a>
+          <a href="afhaal.html" class="p-2 text-primary hover:bg-surface-variant/50 rounded-full transition-all duration-300 relative">
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </a>
+        </div>
+        <a href="afhaal.html" class="hidden lg:flex items-center justify-center bg-primary text-white font-label-lg text-label-lg px-6 py-3 rounded hover:bg-primary/90 hover:scale-[0.97] transition-all duration-150">Afhaal Bestellen</a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-primary">
+          <span class="material-symbols-outlined text-[32px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================
+       MOBILE MENU
+       ============================================ -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+  <div id="mobile-menu-panel" class="mobile-menu-panel">
+    <div class="flex justify-between items-center p-6 border-b border-secondary/20">
+      <img src="img/dapur-ibu-logo.png" alt="Dapur Ibu Logo" class="h-8 md:h-10 object-contain">
+      <button id="mobile-menu-close" class="p-2 text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col p-6 gap-2">
+      <a href="home.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Home</a>
+      <a href="menu.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Gerechten</a>
+      <a href="afhaal.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Afhaal Menu</a>
+      <a href="catering.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Catering</a>
+      <a href="over-ons.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Over Ons</a>
+      <a href="contact.html" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary py-3 px-4 rounded-lg hover:bg-surface-variant/30 transition-all">Contact</a>
+      <hr class="border-secondary/20 my-2">
+      <a href="afhaal.html" class="bg-primary text-white font-label-lg text-label-lg px-6 py-3 rounded text-center hover:bg-primary/90 transition-colors">Afhaal Bestellen</a>
+      <a href="catering.html" class="border border-secondary text-secondary font-label-lg text-label-lg px-6 py-3 rounded text-center hover:bg-secondary/5 transition-colors">Catering</a>
+    </nav>
+    <div class="p-6 border-t border-secondary/20 mt-auto">
+      <p class="font-label-md text-label-md text-on-surface-variant">📞 070 326 32 54</p>
+      <p class="font-label-md text-label-md text-on-surface-variant">📧 dapuribu@yahoo.com</p>
+    </div>
+  </div>
+
+  <!-- ============================================
+       HERO — Over Ons
+       ============================================ -->
+  <section class="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
+    <!-- Background: de echte toko foto -->
+    <img src="https://dapur-ibu.nl/wp-content/uploads/2022/05/dapur-ibu.jpg" alt="Toko Dapur Ibu" class="absolute inset-0 w-full h-full object-cover">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70"></div>
+    <!-- Content -->
+    <div class="relative z-10 text-center px-5 md:px-16 max-w-[800px] mx-auto animate-fade-in-up">
+      <a href="#ons-verhaal" class="inline-flex items-center gap-2 bg-black/50 backdrop-blur-md text-white hover:bg-black/70 transition-colors font-label-lg text-label-lg px-5 py-2.5 rounded-full mb-6 border border-white/30 shadow-lg cursor-pointer">
+        <span class="material-symbols-outlined text-[18px] icon-filled text-secondary-fixed">favorite</span>
+        Ons Verhaal
+      </a>
+      <h1 class="font-headline-lg text-headline-lg text-white mb-4 hero-title" style="font-family: 'Playfair Display'; text-shadow: 0 2px 20px rgba(0,0,0,0.3);">Over Ons</h1>
+      <p class="font-body-lg text-body-lg text-white/90 max-w-[600px] mx-auto leading-relaxed italic" style="font-family: 'Playfair Display';">
+        "Heerlijk Indonesisch eten zoals mama het ooit bedoeld heeft"
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ONS VERHAAL — Text + Photo Grid
+       ============================================ -->
+  <section id="ons-verhaal" class="py-16 md:py-section-gap px-5 md:px-16 scroll-mt-24">
+    <div class="max-w-[1280px] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left: Text -->
+        <div class="reveal">
+          <span class="inline-flex items-center gap-2 bg-primary/5 text-primary font-label-md text-label-md px-4 py-2 rounded-full mb-6">
+            <span class="material-symbols-outlined text-[18px]">auto_stories</span>
+            Sinds generaties
+          </span>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6" style="font-family: 'Playfair Display';">
+            De Keuken van <span class="text-primary">Mama</span>
+          </h2>
+          <div class="space-y-5 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            <p>
+              Bij Toko Dapur Ibu begint alles met familie. De naam "Dapur Ibu" betekent letterlijk "mama's recept" — en dat is precies de essentie van wat wij doen. Onze oma leerde koken in Surabaya, waar traditionele Javaanse gerechten nog met veel aandacht, geduld en liefde werden bereid. In de keuken stonden verse kruiden, specerijen en familierecepten centraal. Die recepten en kooktechnieken werden van generatie op generatie doorgegeven.
+            </p>
+            <p>
+              Wat onze oma ons heeft geleerd, gaf zij door aan onze moeder. Onze moeder heeft diezelfde passie, smaken en tradities weer aan ons doorgegeven. Zo leven de authentieke recepten uit Surabaya vandaag de dag nog steeds voort in onze keuken.
+            </p>
+            <p>
+              Voor ons is koken meer dan alleen eten bereiden. Het is een manier om herinneringen, cultuur en familieverhalen te delen. Elke maaltijd die wij maken, draagt een stukje van onze familiegeschiedenis met zich mee.
+            </p>
+            <p class="text-primary font-medium" style="font-family: 'Plus Jakarta Sans';">
+              Daarom voelt het voor ons bijzonder om onze gerechten met onze klanten te delen. Wanneer u bij Toko Dapur Ibu eet, proeft u niet alleen de authentieke smaken van Java, maar ook de warmte van een traditie die al generaties lang binnen onze familie wordt gekoesterd.
+            </p>
+          </div>
+
+          <!-- Decorative Javaans schrift -->
+          <div class="mt-8 flex items-center gap-4">
+            <img src="https://dapur-ibu.nl/wp-content/uploads/2022/03/javaans-schrift-2.png" alt="Javaans schrift" class="h-12 md:h-16 object-contain opacity-60">
+          </div>
+        </div>
+
+        <!-- Right: Photo Collage -->
+        <div class="reveal stagger-2 grid grid-cols-2 gap-4">
+          <!-- Grote foto: binnenkant toko -->
+          <div class="col-span-2 rounded-2xl overflow-hidden border border-secondary/20 shadow-lg card-hover group">
+            <div class="aspect-[16/10] overflow-hidden">
+              <img src="https://dapur-ibu.nl/wp-content/uploads/2022/04/inside-toko.jpg" alt="Binnenkant van Toko Dapur Ibu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+          </div>
+          <!-- Kleine foto 1: snacks vitrine -->
+          <div class="rounded-2xl overflow-hidden border border-secondary/20 shadow-md card-hover group">
+            <div class="aspect-square overflow-hidden">
+              <img src="https://dapur-ibu.nl/wp-content/uploads/2022/04/toko-snacks.jpg" alt="Snacks vitrine in de toko" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+          </div>
+          <!-- Kleine foto 2: buitenkant -->
+          <div class="rounded-2xl overflow-hidden border border-secondary/20 shadow-md card-hover group">
+            <div class="aspect-square overflow-hidden">
+              <img src="https://dapur-ibu.nl/wp-content/uploads/2022/05/dapur-ibu.jpg" alt="Buitenkant Toko Dapur Ibu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+  
+
+  <!-- ============================================
+       ONS TEAM & SOLLICITATIES
+       ============================================ -->
+  <section class="py-16 md:py-section-gap px-5 md:px-16 bg-white reveal">
+    <div class="max-w-[1280px] mx-auto">
+      
+      <div class="text-center mb-12">
+        <span class="inline-flex items-center gap-2 bg-primary/5 text-primary font-label-md text-label-md px-4 py-2 rounded-full mb-4">
+          <span class="material-symbols-outlined text-[18px]">group</span>
+          Ontmoet ons Team
+        </span>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4" style="font-family: 'Playfair Display';">
+          De Mensen achter <span class="text-primary">Dapur Ibu</span>
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-[700px] mx-auto leading-relaxed">
+          Ons team bestaat uit gepassioneerde koks en gastvrije medewerkers die elke dag met een glimlach voor u klaarstaan. Samen zorgen we voor de authentieke smaak en de warme sfeer waar Dapur Ibu om bekend staat.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mb-8">
+        
+        <!-- Team Uitleg Box -->
+        <div class="bg-surface-variant/20 rounded-3xl p-8 md:p-12 border border-secondary/10 flex flex-col justify-center">
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-4" style="font-family: 'Playfair Display';">Een Passie voor Eten</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            In onze keuken werken we met verse ingrediënten en authentieke familierecepten. Iedereen in ons team deelt dezelfde liefde voor de Indonesische keuken. Of je nu bij ons komt afhalen of we de catering voor je evenement verzorgen, ons team legt hart en ziel in elke maaltijd.
+          </p>
+          <div class="flex items-center gap-4">
+             <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[24px]">restaurant</span>
+             </div>
+             <div>
+                <p class="font-label-lg text-label-lg text-on-surface">Vakmanschap</p>
+                <p class="font-label-md text-[13px] text-on-surface-variant">Met liefde bereid</p>
+             </div>
+          </div>
+        </div>
+
+        <!-- Sollicitatie Box -->
+        <div class="bg-primary text-white rounded-3xl p-8 md:p-12 flex flex-col justify-center relative overflow-hidden shadow-lg group">
+          <!-- Decorative circle -->
+          <div class="absolute -right-16 -top-16 w-64 h-64 bg-white/10 rounded-full blur-2xl group-hover:scale-110 transition-transform duration-700"></div>
+          
+          <h3 class="font-headline-md text-headline-md text-white mb-4 relative z-10" style="font-family: 'Playfair Display';">Werken bij Dapur Ibu?</h3>
+          <p class="font-body-md text-body-md text-white/90 mb-8 leading-relaxed relative z-10">
+            Ben jij gepassioneerd over de Indonesische keuken en houd je van aanpakken in een gezellig en hardwerkend team? Wij zijn altijd op zoek naar enthousiaste collega's voor in de bediening en de keuken!
+          </p>
+          
+          <a href="mailto:dapuribu@yahoo.com?subject=Sollicitatie%20Dapur%20Ibu" class="inline-flex items-center justify-center gap-2 bg-white text-primary font-label-lg text-label-lg px-8 py-4 rounded-full hover:bg-surface-variant hover:scale-[0.98] transition-all duration-300 w-fit relative z-10">
+            <span class="material-symbols-outlined text-[20px]">mail</span>
+            Stuur een Open Sollicitatie
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LOCATIE / BEZOEK ONS
+       ============================================ -->
+  <section class="py-16 md:py-section-gap px-5 md:px-16 bg-surface-container-low reveal">
+    <div class="max-w-[1280px] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        
+        <!-- Map -->
+        <div class="rounded-2xl overflow-hidden border border-secondary/20 shadow-lg h-[400px]">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.5!2d4.3567!3d52.0706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDA0JzE0LjIiTiA0wrAyMScyNC4xIkU!5e0!3m2!1sen!2snl!4v1" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Info -->
+        <div class="space-y-6">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface" style="font-family: 'Playfair Display';">
+            Bezoek onze <span class="text-primary">Toko</span>
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            U bent van harte welkom in onze toko in het hart van Voorburg. Kom langs voor verse gerechten, snacks, of een broodje om mee te nemen.
+          </p>
+
+          <!-- Info items -->
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 bg-rice-paper rounded-xl border border-secondary/10">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-primary text-[24px]">location_on</span>
+              </div>
+              <div>
+                <h4 class="font-label-lg text-label-lg text-on-surface">Adres</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Koningin Julianaplein 1, 2274 JD Voorburg</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 bg-rice-paper rounded-xl border border-secondary/10">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-primary text-[24px]">schedule</span>
+              </div>
+              <div>
+                <h4 class="font-label-lg text-label-lg text-on-surface">Openingstijden</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Maandag &amp; Zondag: 15:00 – 19:30</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">Dinsdag: 12:00 – 19:30</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">Woensdag: 12:00 – 19:30</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">Donderdag: 12:00 – 19:30</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">Vrijdag: 12:00 – 19:30</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">Zaterdag: 12:00 – 19:30</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 bg-rice-paper rounded-xl border border-secondary/10">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-primary text-[24px]">call</span>
+              </div>
+              <div>
+                <h4 class="font-label-lg text-label-lg text-on-surface">Contact</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant"><a href="tel:0703263254" class="text-primary hover:underline">070 326 32 54</a> · <a href="mailto:dapuribu@yahoo.com" class="text-primary hover:underline">dapuribu@yahoo.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a href="afhaal.html" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-lg text-label-lg px-6 py-3 rounded hover:bg-primary/90 hover:scale-[0.97] transition-all duration-150">
+              <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+              Afhaal Bestellen
+            </a>
+            <a href="menu.html" class="hidden inline-flex items-center justify-center gap-2 border border-primary text-primary font-label-lg text-label-lg px-6 py-3 rounded hover:bg-primary/5 transition-colors">
+              <span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+              Bekijk het Menu
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="border-t border-white/10 bg-deep-charcoal text-secondary-fixed">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-5 md:px-16 py-10 max-w-[1280px] mx-auto">
+      <div class="flex flex-col gap-2 text-center md:text-left">
+        <span class="font-headline-sm text-headline-sm text-rice-paper">Dapur Ibu</span>
+        <span class="font-body-md text-body-md text-surface-variant/80">Authentieke Indonesische Keuken in Voorburg</span>
+        <span class="font-label-md text-label-md text-surface-variant/60 mt-1">© 2026 Dapur Ibu</span>
+      </div>
+      <nav class="flex flex-col gap-2 text-center md:text-left">
+        <span class="font-label-lg text-label-lg text-rice-paper mb-1">Navigatie</span>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="home.html">Home</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="menu.html">Gerechten</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="afhaal.html">Afhaal Menu</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="catering.html">Catering</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="over-ons.html">Over Ons</a>
+        <a class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors" href="contact.html">Contact</a>
+      </nav>
+      <div class="text-center md:text-left">
+        <span class="font-label-lg text-label-lg text-rice-paper mb-2 block">Openingstijden</span>
+        <div class="space-y-1 font-label-md text-label-md text-surface-variant/80">
+          <div class="flex justify-between gap-4"><span>Maandag</span><span>15:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Dinsdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Woensdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Donderdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Vrijdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Zaterdag</span><span>12:00 – 19:30</span></div>
+          <div class="flex justify-between gap-4"><span>Zondag</span><span>15:00 – 19:30</span></div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center md:items-end justify-between gap-4">
+        <div class="text-center md:text-right">
+          <span class="font-label-lg text-label-lg text-rice-paper mb-2 block">Contact</span>
+          <p class="font-label-md text-label-md text-surface-variant/80">📞 070 326 32 54</p>
+          <p class="font-label-md text-label-md text-surface-variant/80">📧 dapuribu@yahoo.com</p>
+          <p class="font-label-md text-label-md text-surface-variant/80 mt-1">Koningin Julianaplein 1<br>2274 JD Voorburg</p>
+          <div class="mt-4">
+            <a href="https://www.instagram.com/toko.dapuribu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="font-label-md text-label-md text-surface-variant/80 hover:text-sunset-orange transition-colors inline-flex items-center gap-2">
+              <i class="fa-brands fa-instagram text-[18px] text-transparent bg-clip-text bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]"></i> Volg ons op Instagram
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
