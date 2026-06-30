@@ -2445,3 +2445,17 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+
+// Parallax Effect for Hero Images
+document.addEventListener('DOMContentLoaded', () => {
+  const parallaxEls = document.querySelectorAll('.parallax-bg');
+  if (parallaxEls.length > 0) {
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      parallaxEls.forEach(el => {
+        // Move element down at 30% of scroll speed, scale slightly to prevent edges showing
+        el.style.transform = `translate3d(0, ${scrollY * 0.3}px, 0) scale(1.15)`;
+      });
+    }, { passive: true });
+  }
+});
