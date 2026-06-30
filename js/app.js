@@ -2421,7 +2421,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   bttBtn.addEventListener('click', () => {
-    const isHomePage = window.location.pathname.endsWith('home.html') || window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+    const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
     
     if (!isHomePage) {
       let targetEl = document.querySelector('main');
