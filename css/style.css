@@ -453,3 +453,21 @@ html:has(.modal-overlay.active),
 body:has(.modal-overlay.active) {
   overflow: hidden !important;
 }
+
+/* SPA Page Transitions */
+body {
+  animation: pageFadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body.page-exit {
+  animation: pageFadeOut 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+@keyframes pageFadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-12px); }
+}

@@ -2459,3 +2459,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 });
+
+// SPA Page Transitions
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('a[href]');
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      
+      // Only intercept local HTML links, not external, not anchors, not tel:, mailto:, etc.
+      if (
+        href && 
+        href.endsWith('.html') && 
+        !href.startsWith('http') && 
+        link.target !== '_blank'
+      ) {
+        e.preventDefault();
+        document.body.classList.add('page-exit');
+        setTimeout(() => {
+          window.location.href = href;
+        }, 250); // Matches the CSS animation duration slightly shorter for snappiness
+      }
+    });
+  });
+});
